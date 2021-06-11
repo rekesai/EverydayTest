@@ -7,7 +7,7 @@ public class Test8 {
         Scanner s = new Scanner(System.in);
         int a = s.nextInt();
         int b = s.nextInt();
-        //求最小公倍数，优化：从a*b的中间开始  再优化：从a*b的算术平方根开始
+        //求最小公倍数，优化：从a*b的中间开始  再优化：从a*b的算术平方根开始，就是Math.sqrt();
         for(int i = (int)(Math.sqrt(a*b)); i <= a*b; i++){
             if(i%a==0 && i%b==0){
                 System.out.println(i);

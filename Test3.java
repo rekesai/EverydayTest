@@ -1,3 +1,4 @@
+import java.net.Socket;
 import java.util.*;
 
 class Person{
@@ -69,6 +70,8 @@ class Child extends Person{
         for(int j = 0; j < list.get(index).size(); j++){
             System.out.print(list.get(index).get(j));
         }
+        Socket socket = new Socket();
+
     }
 
 

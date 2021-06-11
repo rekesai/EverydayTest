@@ -1,9 +1,21 @@
 import java.util.Scanner;
 
+abstract class MyClass11{
+    public int count = 5;
+    public abstract void func(int a);
+    public void func(){}
+
+}
 public class Test11 {
 
+    public static void main(String[] args) {
+        String str1 = "hello";
+        String str2 = "he" + new String("llo");
+        System.out.println(str1==str2);
+    }
+
     //输入一个byte型数字，求其二进制数字中1的最大连续数，如输入3，输出2
-    public static void main(String[] args) throws Exception{
+    public static void main1(String[] args) throws Exception{
         Scanner s = new Scanner(System.in);
         byte n = s.nextByte();
         int i = n;

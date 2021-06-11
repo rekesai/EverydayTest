@@ -1,8 +1,23 @@
 import java.util.Scanner;
 
+
+
+
+
 public class Test10 {
 
-    public static void main(String[] args){
+
+
+    public final static native int w();
+
+
+    public static void main(String[] args) {
+        byte b1 = 1, b2 = 2, b3, b6;
+        final byte b4 = 4, b5 = 6;
+        b6 = b4 + b5;
+        //b3 =  (b1 + b2);   编译出错
+    }
+    public static void main1(String[] args){
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
         int count = 0;

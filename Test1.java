@@ -5,6 +5,21 @@ import java.util.Scanner;
 public class Test1 {
 
 
+    public static void sort(int[] array){
+        for(int i = 1; i < array.length; i++){
+            int tmp = array[i];
+            int j = i - 1;
+            for(; j >= 0; j--){
+                if(array[j] > tmp){
+                    array[j+1] = array[j];
+                }
+                else{
+                    break;
+                }
+            }
+            array[j+1] = tmp;
+        }
+    }
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
@@ -14,13 +29,14 @@ public class Test1 {
         }
         Arrays.sort(array);
         int ret = 0;
-        for(int i = n; i < array.length-n; i++){
+        for(int i = n; i < array.length; i+=2){
             ret += array[i];
         }
         System.out.println(ret);
     }
 
-    public void removeSte(){
+
+    public void removeStr(){
         Scanner s = new Scanner(System.in);
         String str1 = s.nextLine();
         String str2 = s.nextLine();
