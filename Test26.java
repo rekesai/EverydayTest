@@ -1,7 +1,6 @@
-import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Test26 {
-
     /**
      * 链接：https://www.nowcoder.com/questionTerminal/82424d93369649b98720743c25edc6ce
      *
@@ -25,10 +24,20 @@ public class Test26 {
      * No
      * No
      */
-
     public static void main(String[] args){
-        BigInteger bigInteger = new BigInteger("123456");
+        Scanner s = new Scanner(System.in);
+        while(s.hasNext()){
+            double n = s.nextDouble();
+            double r = s.nextDouble();
+            if(n < 2*3.14*r){
+                System.out.println("Yes");
+            }
+            else{
+                System.out.println("No");
+            }
+        }
     }
+
 
 
     /**
